@@ -82,5 +82,7 @@ TEST_F(test01VoitureRoule, NoGaz)
     EXPECT_THROW(oldCar.rouler(200),std::invalid_argument);
    // EXPECT_EQ(oldCar.kilometrage(),192000);
     //EXPECT_EQ(oldCar.jaugeCarburant(),300);
+    EXPECT_THAT(oldCar.kilometrage(),Eq(kmStart));
+    EXPECT_THAT(oldCar.jaugeCarburant(),Eq(jaugeStart));
 }
 
