@@ -68,9 +68,9 @@ TEST_P(testVoiturerecentRoule, Range)
 
 //param(label qui rassemble le test, nomdutest/classe,valeurs qu'on fourni permet de declencher le test avec autant de valeurs qu'on veut
 INSTANTIATE_TEST_SUITE_P(GroupVoitureRecnte,testVoiturerecentRoule,
-                         //Values(0, 10000, 149999,150000,150001)
+                         Values(0, 10000, 149999,150000,150001));
                          //boucle va de 0 a 150000 pour tt les 10000 le 0 est inclut dans le test mais pas 150000 il n'est pas tester
-                         Range(0,150000,10000));
+                        // Range(0,150000,10000));
 
 TEST_F(test01VoitureRoule, NoGaz)
 {
