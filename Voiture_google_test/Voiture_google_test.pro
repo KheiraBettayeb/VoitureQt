@@ -8,7 +8,8 @@ CONFIG += thread
 HEADERS += \
         tst_a.h \
     tst_testvoitureconstructor.h \
-    tst_voitureroule.h
+    tst_voitureroule.h \
+    tst_testpilote.h
 
 SOURCES += \
         main.cpp
